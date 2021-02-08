@@ -26,7 +26,7 @@
                     </div>
                 </footer>
 
-                <small>&copy;<?php echo date('Y') ?> Bakos Bence</small>
+                <small>&copy;<?php echo date('Y') ?> QNSZT Kft</small>
             </div>
         </div>
     </body>
