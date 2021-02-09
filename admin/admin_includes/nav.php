@@ -18,6 +18,10 @@
             'slug' => "../index.php",
             'title' => "Main site"
         ),
+        array(
+            'slug' => "logout.php",
+            'title' => "Log out"
+        ),
     );
 
         foreach($navItems as $item){
