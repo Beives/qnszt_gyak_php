@@ -7,8 +7,8 @@
 		$result=mysqli_query($conn, $query);
 		$row=mysqli_fetch_array($result);
 		if(isset($_POST['submit'])){
-		$Modquery="UPDATE messages set name='".$_POST["name"]."',email='".$_POST["email"]."',message='".$_POST["message"]."' WHERE id=".$_GET["edit"];
-		mysqli_query($conn, $Modquery) or die ("Nem sikerült".mysqli_error($conn));
+		$Edit="UPDATE messages set name='".$_POST["name"]."',email='".$_POST["email"]."',message='".$_POST["message"]."' WHERE id=".$_GET["edit"];
+		mysqli_query($conn, $Edit) or die ("Nem sikerült".mysqli_error($conn));
 		mysqli_close($conn);
 		echo '<meta http-equiv="refresh" content="0;url=messages_info.php">';
 		}
