@@ -25,3 +25,12 @@ CREATE TABLE admin(
 
     CONSTRAINT PK_admin PRIMARY KEY(id)
 );
+
+CREATE TABLE messages(
+    id INT NOT NULL,
+    name VARCHAR(250) NOT NULL,
+    email VARCHAR(250) NOT NULL,
+    message VARCHAR(250) NOT NULL,
+    
+    CONSTRAINT PK_messages PRIMARY KEY(id)
+);
