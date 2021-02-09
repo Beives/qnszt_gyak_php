@@ -6,19 +6,13 @@
 <?php include('admin_includes/footer.php'); ?>
 
 <?php
-$username="root";
-$passwd="";
-$dbname="qnszt_gyak";
-$szerver="localhost";
-$con=mysqli_connect($szerver,$username,$passwd,$dbname);
-$con->set_charset("UTF8");
 $query="select * from menu_items where id=".$_GET["modosit"];
-$result=mysqli_query($con, $query);
+$result=mysqli_query($conn, $query);
 $row=mysqli_fetch_array($result);
 if(isset($_POST['submit'])){
 $Modquery="update menu_items set title='".$_POST["title"]."',price='".$_POST["price"]."',blurb='".$_POST["blurb"]."',drink='".$_POST["drink"]."' where id=".$_GET["modosit"];
-mysqli_query($con, $Modquery) or die ("Nem sikerült".mysqli_error($con));
-mysqli_close($con);
+mysqli_query($conn, $Modquery) or die ("Nem sikerült".mysqli_error($conn));
+mysqli_close($conn);
 echo '<meta http-equiv="refresh" content="0;url=menu_info.php">';
 }
 ?>

@@ -5,14 +5,6 @@
 
 <?php include('admin_includes/footer.php'); ?>
 
-<?php
-$username="root";
-$passwd="";
-$dbname="qnszt_gyak";
-$szerver="localhost";
-$con=mysqli_connect($szerver,$username,$passwd,$dbname);
-$con->set_charset("UTF8");
-?>
 <H1>Menu list!</H1>
 <div>
     <a href="menu.php">Menu</a>
@@ -47,7 +39,7 @@ if(isset($_GET["Rendezes"]))
 {
 $query.=" order by ".$_GET["Rendezes"];
 }
-$result=mysqli_query($con, $query);
+$result=mysqli_query($conn, $query);
 while ($row=mysqli_fetch_assoc($result))
 {
 echo '<tr>
@@ -67,6 +59,6 @@ echo '<tr>
 if(isset($_POST["submit"]))
 {
 	$Deletequery="delete from menu_items where id=".$_POST["id"];
-	mysqli_query($con, $Deletequery);
+	mysqli_query($conn, $Deletequery);
 }
-mysqli_close($con);?>
+mysqli_close($conn);?>

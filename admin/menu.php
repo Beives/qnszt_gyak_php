@@ -6,17 +6,10 @@
 <?php include('admin_includes/footer.php'); ?>
 
 <?php
-$username="root";
-$passwd="";
-$dbname="qnszt_gyak";
-$szerver="localhost";
-$con=mysqli_connect($szerver,$username,$passwd,$dbname);
-$con->set_charset("UTF8");
-
 if(isset($_POST['submit'])){
 $query="insert into menu_items(title,price,blurb,drink) values ('".$_POST['title']."','".$_POST['price']."','".$_POST['blurb']."','".$_POST['drink']."')";
-mysqli_query($con, $query) or die ("Nem sikerült".mysqli_error($con));
-mysqli_close($con);
+mysqli_query($conn, $query) or die ("Nem sikerült".mysqli_error($conn));
+mysqli_close($conn);
 echo "<script>alert('Sikeres!')</script>";
 }
 ?>
