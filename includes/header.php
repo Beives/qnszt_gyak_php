@@ -9,7 +9,7 @@
     <body>
         <div class="wrapper">
             <header>
-                <a href="/" title="Return to home">
+                <a href="/qnszt_gyak_php/" title="Return to home">
                     <img src="img/banner.png" alt="Banner">
                 </a>
             </header>
