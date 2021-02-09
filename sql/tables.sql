@@ -1,5 +1,5 @@
 CREATE TABLE team_members(
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
     position VARCHAR(250) NOT NULL,
     bio VARCHAR(250) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE team_members(
 );
 
 CREATE TABLE menu_items(
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(250) NOT NULL,
     price INT NOT NULL,
     blurb VARCHAR(250) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE menu_items(
 );
 
 CREATE TABLE admin(
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
     password VARCHAR(250) NOT NULL,
 
@@ -27,7 +27,7 @@ CREATE TABLE admin(
 );
 
 CREATE TABLE messages(
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(250) NOT NULL,
     email VARCHAR(250) NOT NULL,
     message VARCHAR(250) NOT NULL,
