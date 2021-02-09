@@ -20,7 +20,7 @@ mysqli_close($con);
 echo "<script>alert('Sikeres!')</script>";
 }
 ?>
-<H1>Menű felvétele!</H1>
+<H1>Menü felvétele!</H1>
 
 <div class="form" align="center">
   <form action="menu.php" method="post" enctype="multipart/form-data">
