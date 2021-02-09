@@ -69,6 +69,21 @@ include('includes/header.php');
 
     </form>
     <?php } ?>
+
+    <?php
+		$DB_user="root";
+		$DB_passwd="";
+		$DB_name="qnszt_gyak";
+		$DB_host="localhost";
+		$con=mysqli_connect($DB_host,$DB_user,$DB_passwd,$DB_name);
+		$con->set_charset("UTF8");
+
+if(isset($_POST['contact_submit'])){
+	$query="Insert into messages(name,email,message) values ('".$_POST['name']."','".$_POST['email']."','".$_POST['message']."')";
+	mysqli_query($con, $query) or die ("Hiba".mysqli_error($con));
+	mysqli_close($con);
+}
+?>
 </div>
 
 <?php include('includes/footer.php') ?>
