@@ -17,7 +17,7 @@ $con->set_charset("UTF8");
 <div>
     <a href="menu.php">Menu</a>
 </div>
-<form method="post" align="center">
+<form method="post">
     <input type="text" name="search" placeholder="Keresés a táblában">
     <input type="submit" value="Keres" name="keres">
 

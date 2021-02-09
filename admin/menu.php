@@ -24,7 +24,7 @@ echo "<script>alert('Sikeres!')</script>";
 <div>
     <a href="menu_info.php">Menu Info</a>
 </div>
-<div class="form" align="center">
+<div>
   <form action="menu.php" method="post" enctype="multipart/form-data">
    <input type="text" name="title" placeholder="Title"><br>
   <input type="number" name="price" placeholder="Price"><br>
