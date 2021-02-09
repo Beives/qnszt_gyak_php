@@ -2,14 +2,6 @@
     define("TITLE", "Admin | Basic restaurant");
     include('admin_includes/header.php');
 ?>
-<?php
-		$DB_user="root";
-		$DB_passwd="";
-		$DB_name="qnszt_gyak";
-		$DB_host="localhost";
-		$con = mysqli_connect($DB_host,$DB_user,$DB_passwd,$DB_name);
-		$con->set_charset("UTF8");
-?>
 
 <H1>Message list!</H1>
 <form method="post">
@@ -29,7 +21,7 @@
 
 <?php
 $query="SELECT * FROM messages";
-$result=mysqli_query($con, $query);
+$result=mysqli_query($conn, $query);
 while ($row=mysqli_fetch_assoc($result))
 {
 echo 
@@ -49,6 +41,6 @@ echo
 if(isset($_POST["submit"]))
 {
 	$Del="DELETE From messages where id=".$_POST["id"];
-	mysqli_query($con, $Del);
+	mysqli_query($conn, $Del);
 }
-mysqli_close($con);?>
+mysqli_close($conn);?>

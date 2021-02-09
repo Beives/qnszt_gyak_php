@@ -3,19 +3,13 @@
     include('admin_includes/header.php');
 ?>
 <?php
-		$DB_user="root";
-		$DB_passwd="";
-		$DB_name="qnszt_gyak";
-		$DB_host="localhost";
-		$con = mysqli_connect($DB_host,$DB_user,$DB_passwd,$DB_name);
-		$con->set_charset("UTF8");
 		$query="SELECT * from messages where id=".$_GET["edit"];
-		$result=mysqli_query($con, $query);
+		$result=mysqli_query($conn, $query);
 		$row=mysqli_fetch_array($result);
 		if(isset($_POST['submit'])){
 		$Modquery="UPDATE messages set name='".$_POST["name"]."',email='".$_POST["email"]."',message='".$_POST["message"]."' WHERE id=".$_GET["edit"];
-		mysqli_query($con, $Modquery) or die ("Nem sikerült".mysqli_error($con));
-		mysqli_close($con);
+		mysqli_query($conn, $Modquery) or die ("Nem sikerült".mysqli_error($conn));
+		mysqli_close($conn);
 		echo '<meta http-equiv="refresh" content="0;url=messages_info.php">';
 		}
 ?>
