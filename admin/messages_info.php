@@ -11,7 +11,7 @@
 		$con->set_charset("UTF8");
 ?>
 
-<H1>Messages list!</H1>
+<H1>Message list!</H1>
 <form method="post">
     <input type="text" name="search" placeholder="Keresés a táblában">
     <input type="submit" value="Keresés" name="keres">
@@ -19,7 +19,7 @@
 	</form>
 	<table>
 	<tr>
-		<td>Nev</td>
+		<td>Name</td>
 		<td>Email</td>
 		<td>Message</td>
 		<td>Edit</td>
