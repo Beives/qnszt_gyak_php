@@ -2,7 +2,6 @@
     define("TITLE", "Admin | Basic restaurant");
     include('admin_includes/header.php');
 ?>
-
 <?php 
 	if(isset($_POST['submit'])){
 		$query="INSERT Into messages(name,email,message) values ('".$_POST['name']."','".$_POST['email']."','".$_POST['message']."')";
