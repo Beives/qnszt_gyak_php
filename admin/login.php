@@ -5,24 +5,25 @@ $dbname="qnszt_gyak";
 $szerver="localhost";
 $con=mysqli_connect($szerver,$username,$passwd,$dbname);
 $con->set_charset("UTF8");
-session_start();if(isset($_POST['submit'])){
-	if(isset($_POST['captcha_challenge']) && $_POST['captcha_challenge'] == $_SESSION['captcha_text']){
-		$query="select * from admin where name='".$_POST['name']."'";
-		$result=mysqli_query($con,$query);
-		if($sor=mysqli_fetch_assoc($result)){
-			$passwordel=password_verify($_POST['password'],$sor['password']);
-			if($passwordel==false){
-				echo"<script>alert('Nem jó a jelszó!')</script>";
-				header('Refresh:0');
-			exit();
-			}
-			else{
-				$_SESSION['name']=$sor['name'];
-				echo '<meta http-equiv="refresh" content="0;url=index.php">';
-			}
-		}
-	}	
-}
+session_start();
+if(isset($_POST['submit'])){
+	$uname=$_POST['name'];
+  $password=$_POST['password'];
+
+  $sql="SELECT * FROM admin WHERE name='".$uname."' AND password='".$password."' LIMIT 1";
+
+  $result=mysqli_query($con,$sql);
+
+  if($result==1){
+    header("Location: ./index.php");
+    $_SESSION['name']=$uname;
+    exit();
+  }
+  else{
+    echo "Sikertelen belépés!";
+    exit();
+  }
+} ?>
 ?>
 <div class="form">
 	<form action="login.php" method="post" enctype="multipart/form-data">
