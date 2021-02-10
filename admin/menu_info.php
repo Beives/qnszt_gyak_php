@@ -3,8 +3,6 @@
     include('admin_includes/header.php');
 ?>
 
-<?php include('admin_includes/footer.php'); ?>
-
 <H1>Menu list!</H1>
 <div>
     <a href="menu.php">Menu</a>
@@ -62,3 +60,4 @@ if(isset($_POST["submit"]))
 	mysqli_query($conn, $Deletequery);
 }
 mysqli_close($conn);?>
+	<?php include('admin_includes/footer.php'); ?>
