@@ -2,6 +2,10 @@
     include('admin_includes/database.php');
     session_start();
 ?>
+<?php
+session_start();
+if(isset($_SESSION['name'])){
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
