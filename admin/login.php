@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
     echo "Sikertelen belépés!";
     exit();
   }
-} ?>
+}
 ?>
 <div class="form">
 	<form action="login.php" method="post" enctype="multipart/form-data">
