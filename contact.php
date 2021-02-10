@@ -25,7 +25,7 @@ include('includes/header.php');
             die();
         }
 
-        if( !$name || !$name || !$message){
+        if( !$name || !$email || !$message){
             echo '<h4 class="error">All fields required</h4><a href="contact.php" class="button block">Go back and try again</a>';
         }
 
@@ -49,7 +49,7 @@ include('includes/header.php');
     ?>
     <h5>Thanks for contacting us</h5>
     <p>Please allow a couple of hours for a response</p>
-    <p><a href="/final" class="button block">Go to home</a></p>
+    <p><a href="/index.php" class="button block">Go to home</a></p>
     <?php }else{ ?>
 
     <form action="contact.php" method="post" id="contact-form">
