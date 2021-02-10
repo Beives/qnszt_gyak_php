@@ -32,7 +32,7 @@ session_start();if(isset($_POST['submit'])){
 				<input type="password" name="password" placeholder="Jelszó" required><br>
 	    	<br>
 				<input type="submit" value="Belépés" name="submit"></br>
-				<a href="index.php">Back</a>
+				<a href="../index.php">Back</a>
 	</form>			
 			
 			
