@@ -3,7 +3,6 @@
     include('admin_includes/header.php');
 ?>
 
-<?php include('admin_includes/footer.php'); ?>
 
 <?php
 if(isset($_POST['submit'])){
@@ -26,3 +25,4 @@ echo "<script>alert('Sikeres!')</script>";
 
   <input type="submit" value="Submit" name="submit"></br>
   </form></div>
+<?php include('admin_includes/footer.php'); ?>
