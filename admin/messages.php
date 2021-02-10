@@ -12,7 +12,7 @@
 
   <H1>Üzenetek hozzáadása!</H1>
  <div>
-    <a href="messages_info.php" class="btn btn-outline-success">Messages List</a>
+    <a href="messages_info.php">Messages List</a>
 </div>
   <div class="form-group">
   <form action="messages.php"  method="post" enctype="multipart/form-data">
@@ -20,6 +20,6 @@
   <input type="text" name="email" placeholder="Email"><br>
   <input type="text" name="message" placeholder="Message"><br>
 
-  <input type="submit" class="btn btn-outline-dark btn-sm col-1" value="Add" name="submit"></br>
+  <input type="submit" class="btn btn-dark btn-sm" value="Add" name="submit"></br>
   </form></div>
 <?php include('admin_includes/footer.php'); ?>

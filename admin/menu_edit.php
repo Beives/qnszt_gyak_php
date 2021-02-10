@@ -22,7 +22,7 @@ echo '<meta http-equiv="refresh" content="0;url=menu_info.php">';
 <tr><td><label for="price">Price:</label></td><td><input type="number" name="price" value="<?php echo $row["price"];?>"></td></tr>
 <tr><td><label for="blurb">Blurb:</label></td><td><input type="text" name="blurb" value="<?php echo $row["blurb"];?>"></td></tr>
 <tr><td><label for="drink">Drink:</label></td><td><input type="text" name="drink" value="<?php echo $row["drink"];?>"></td></tr>
-<tr><td></td><td><input type="submit" value="Edit	" name="submit"></td>
+<tr><td><td><input type="submit" class="btn btn-warning" col-3" value="Edit" name="submit"> </td></td></tr>
 </form></table>
 
 <?php include('admin_includes/footer.php'); ?>

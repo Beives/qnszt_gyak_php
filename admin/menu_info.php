@@ -9,7 +9,7 @@
 </div>
 <form method="post">
     <input type="text" name="search" placeholder="Keresés a táblában">
-    <input type="submit" value="Keres" name="keres">
+    <input type="submit" class="btn btn-success" value="Keresés" name="keres">
 
 
 </form>
@@ -47,11 +47,11 @@ echo '<tr>
 <td>'.$row["drink"].'</td>
 <td>
 <a href="menu_edit.php?modosit='.$row["id"].'">
-<input type="submit" name="submit" value="Edit"></a></td>
+		<input type="submit" class="btn btn-warning col-10" name="submit" value="Edit"></a></td>
 <td>
 <form action="menu_info.php" method="post">
 <input type="hidden" name="id" value="'.$row["id"].'">
-<input type="submit" name="submit" value="Delete">
+		<input type="submit" class="btn btn-warning col-8" name="submit" value="Delete">
 </form></td></tr>';
 }
 if(isset($_POST["submit"]))
