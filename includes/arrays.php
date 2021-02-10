@@ -17,6 +17,10 @@
                         'slug' => "contact.php",
                         'title' => "Contact"
                     ),
+                    array(
+                        'slug' => "login.php",
+                        'title' => "Login"
+                    ),
     );
 
     $teamMembers = array(
