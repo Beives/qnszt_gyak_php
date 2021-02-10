@@ -19,6 +19,6 @@
 <tr><td><label for="name">Name:</label></td><td><input type="text"  name="name" value="<?php echo $row["name"];?>"></td></tr>
 <tr><td><label for="email">Email:</label></td><td><input type="text" name="email" value="<?php echo $row["email"];?>"></td></tr>
 <tr><td><label for="message">Message:</label></td><td><input type="text" name="message" value="<?php echo $row["message"];?>"></td></tr>
-<tr><td><td><input type="submit" class="btn btn-dark col-3" value="Edit" name="submit"> </td></td></tr>
+<tr><td><td><input type="submit" class="btn btn-outline-dark col-3" value="Edit" name="submit"> </td></td></tr>
 </form></table>
 <?php include('admin_includes/footer.php'); ?>

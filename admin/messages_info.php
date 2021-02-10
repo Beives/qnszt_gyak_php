@@ -5,7 +5,7 @@
 <H1>Message list!</H1>
 <form method="post">
     <input type="text" name="search" placeholder="Keresés a táblában">
-    <input type="submit" class="btn btn-primary btn-sm" value="Keresés" name="keres">
+    <input type="submit" class="btn btn-outline-primary btn-sm" value="Keresés" name="keres">
 </form>
 	</form>
 	<table class="table">
@@ -31,11 +31,11 @@ echo
 		<td>'.$row["message"].'</td>
 	<td>
 		<a href="messages_edit.php?edit='.$row["id"].'">
-		<input type="submit" class="btn btn-secondary col-10" name="submit" value="Edit"></a></td>
+		<input type="submit" class="btn btn-outline-secondary col-10" name="submit" value="Edit"></a></td>
 	<td>	
 	<form action="messages_info.php" method="post">
 		<input type="hidden" name="id" value="'.$row["id"].'">
-		<input type="submit" class="btn btn-danger col-8" name="submit" value="Delete">
+		<input type="submit" class="btn btn-outline-danger col-8" name="submit" value="Delete">
 	</form></td></tr>
 	';
 }
