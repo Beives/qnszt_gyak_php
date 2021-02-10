@@ -14,12 +14,12 @@
  <div>
     <a href="messages_info.php">Messages List</a>
 </div>
-  <div class="form">
-  <form action="messages.php" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+  <form action="messages.php"  method="post" enctype="multipart/form-data">
   <input type="text" name="name" placeholder="Name"><br>
   <input type="text" name="email" placeholder="Email"><br>
   <input type="text" name="message" placeholder="Message"><br>
 
-  <input type="submit" value="Add" name="submit"></br>
+  <input type="submit" class="btn btn-dark btn-sm" value="Add" name="submit"></br>
   </form></div>
 <?php include('admin_includes/footer.php'); ?>
