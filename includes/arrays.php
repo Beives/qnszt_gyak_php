@@ -18,7 +18,7 @@
                         'title' => "Contact"
                     ),
                     array(
-                        'slug' => "login.php",
+                        'slug' => "admin/login.php",
                         'title' => "Login"
                     ),
     );
