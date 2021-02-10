@@ -1,10 +1,10 @@
-<?php 
-    include('admin_includes/database.php');
-    session_start();
-?>
 <?php
 session_start();
 if(isset($_SESSION['name'])){
+?>
+<?php 
+    include('admin_includes/database.php');
+    session_start();
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -25,3 +25,10 @@ if(isset($_SESSION['name'])){
                 <?php include('admin_includes/nav.php');?>
             </nav>
             <article>
+			<?php
+}
+else{
+	echo "<script>alert('Nincsen bejelentkezve!')</script>";
+	echo '<meta http-equiv="refresh" content="0;url=Login.php">';
+}
+?>
