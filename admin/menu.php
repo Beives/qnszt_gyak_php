@@ -12,7 +12,7 @@ mysqli_close($conn);
 echo "<script>alert('Sikeres!')</script>";
 }
 ?>
-<H1>Menű felvétele!</H1>
+<H1>Menü felvétele!</H1>
 <div>
     <a href="menu_info.php">Menu Info</a>
 </div>
