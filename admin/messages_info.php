@@ -43,3 +43,5 @@ if(isset($_POST["submit"]))
 	mysqli_query($conn, $Del);
 }
 mysqli_close($conn);?>
+
+<?php include('admin_includes/footer.php'); ?>

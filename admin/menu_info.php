@@ -60,4 +60,5 @@ if(isset($_POST["submit"]))
 	mysqli_query($conn, $Deletequery);
 }
 mysqli_close($conn);?>
-	<?php include('admin_includes/footer.php'); ?>
+
+<?php include('admin_includes/footer.php'); ?>
