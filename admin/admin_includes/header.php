@@ -4,7 +4,6 @@ if(isset($_SESSION['name'])){
 ?>
 <?php 
     include('admin_includes/database.php');
-    session_start();
 ?>
 <!DOCTYPE HTML>
 <html>
